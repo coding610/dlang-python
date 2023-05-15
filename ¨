@@ -1,0 +1,8 @@
+#debug
+
+let pi
+    float
+    3
+
+print
+    $pi

@@ -1,4 +1,4 @@
-import compile_dlg
+from compile_dlg.compile import compile
 import copy
 
 
@@ -7,10 +7,7 @@ def main():
     content = [l for l in content_class]
     content = trim(content)
     content = parse(content)
-    compile_dlg.compile(content)
-
-
-    
+    compile(content)
 
 def get_contents(file_path):
     file_content = open(file_path, "r")
